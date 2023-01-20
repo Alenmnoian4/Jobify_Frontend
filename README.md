@@ -25,9 +25,9 @@ Anyone who is job searching and applying to jobs.
 [TRELLO BOARD](https://trello.com/b/Uo1hPrCY/jobify
 )
 ### WIRE FRAME
-![Project](images/frontpage.png)
-![Project2](images/addjob.png)
-![Project2](images/index.png)
+![Project](https://i.imgur.com/9ngMgvd.png)
+![Project2](https://i.imgur.com/dxpq2Ik.png)
+![Project2](https://i.imgur.com/FtGB4dC.png)
 
 
 
