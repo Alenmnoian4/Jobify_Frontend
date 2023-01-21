@@ -61,4 +61,4 @@ Anyone who is job searching and applying to jobs.
 
 
 ## Link to Project
-[Live Page](https://looktrailers.com/wp-content/uploads/2022/05/UnderConstruction.png)
+[Live Page](https://clever-platypus-dd3d98.netlify.app/)
