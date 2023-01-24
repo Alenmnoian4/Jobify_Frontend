@@ -1,14 +1,14 @@
-const URL='http://localhost:3000';
+const URL='https://jobifybackendapp.onrender.com';
 
 
-export const jobLoader = async () => {
-    const response = await fetch(URL + "/job");
+export const indexLoader = async () => {
+    const response = await fetch(URL + "/posts");
     const job = await response.json();
     return job;
 }
 
-export const eachjobLoader = async ({params}) => {
-    const response = await fetch(URL + "/job/" + params.id);
+export const showLoader = async ({params}) => {
+    const response = await fetch(URL + "/posts/" + params.id);
     const eachjob = await response.json();
     return eachjob;
 }
