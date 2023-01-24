@@ -3,7 +3,7 @@ import {
     createRoutesFromElements,
     Route,
   } from "react-router-dom";
-
+import Create from "./pages/Create"
 
   
   
