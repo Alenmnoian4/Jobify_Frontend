@@ -9,7 +9,7 @@ function Index(props) {
                 <h2>Jobify Posts</h2>
             <div className="index">
             {posts.map(post => (
-              <Link to={`/${post._id}`} className="post"><div className="post">
+              <Link to={`/posts/${post._id}`} className="post"><div className="post">
                     
                         <h2>{post.role}</h2>
                         <h2>{post.type}</h2>
