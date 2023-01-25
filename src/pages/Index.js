@@ -1,5 +1,5 @@
 import "../index.css";
-import { Link, useLoaderData } from "react-router-dom"
+import {Link, useLoaderData } from "react-router-dom"
 
 function Index(props) {
     const posts = useLoaderData()
@@ -9,11 +9,12 @@ function Index(props) {
                 <h2>Jobify Posts</h2>
             <div className="index">
             {posts.map(post => (
-                <Link><div className="post">
-                     to={`/${post._id}`} className="post"
+              <Link to={`/${post._id}`} className="post"><div className="post">
+                    
                         <h2>{post.role}</h2>
-                        <h2>{post.details}</h2>
-                        <h2>{post.location}</h2>        
+                        <h2>{post.type}</h2>
+                        <h2>{post.location}</h2>
+                          
                 </div></Link>
             ))}
             </div>
