@@ -1,13 +1,6 @@
-
-import React from 'react';
-import ReactDOM from 'react-dom/client';
 import './index.css';
-import {RouterProvider} from 'react-router-dom'
-import router from './router';
-import reportWebVitals from './reportWebVitals';
 
-const [showForm, setShowForm] = useState(false);
-
+function Create (){
   return (
     <div className="all">
       <h2>Job Information:</h2>
@@ -52,5 +45,5 @@ const [showForm, setShowForm] = useState(false);
      <input type="Submit"/>
       </form>
       </div>
-      )
+      )}
       export default Create;
