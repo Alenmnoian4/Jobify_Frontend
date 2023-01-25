@@ -1,11 +1,9 @@
 export default function TypeFilter(props) {
     
-    function onTypeFilterValueChanged(event) {
-        props.TypeFilterValueSelected(event.target.value)
-    }
   
   return (
     <div>
+      <h3>Type</h3>
       <select name="type" ref={props.theRef} onChange={props.newFilterFunction}>
         <option value="All">All</option>
         <option value="Full-time">Full-time</option>
