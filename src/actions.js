@@ -24,7 +24,7 @@ export const createAction = async ({ request }) => {
     body: JSON.stringify(newPost),
   })
 
-  return redirect("/")
+  return redirect("/posts")
 }
 
 export const updateAction = async ({request, params}) => {
@@ -49,7 +49,7 @@ export const updateAction = async ({request, params}) => {
         body: JSON.stringify(updatedPost)
     })
 
-    return redirect("/")
+    return redirect("/posts/" + params.id)
 }
 
 export const deleteAction = async ({params}) => {
@@ -58,5 +58,5 @@ export const deleteAction = async ({params}) => {
         method: "delete"
     })
 
-    return redirect("/")
+    return redirect("/posts")
 }
