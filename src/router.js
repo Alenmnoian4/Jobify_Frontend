@@ -4,7 +4,13 @@ import {
     Route,
   } from "react-router-dom";
 import Create from "./pages/Create"
+import Home from "./pages/Home"
+import App from "./App"
+import Index from "./pages/Index";
+import Show from "./pages/Show";
 import { indexLoader, showLoader } from "./loaders";
+import {createAction, updateAction, deleteAction} from "./actions"
+
 
   
   
