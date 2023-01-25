@@ -5,8 +5,8 @@ export default function FilterRow (props){
 return(
 
 <div>
-    <TypeFilter TypeFilterValueSelected={props.typeFilterValueSelected}/>
-    <OnsiteFilter OnsiteFilterValueSelected={props.onsiteFilterValueSelected}/>
+    <TypeFilter theRef={props.refs.FilterType} newFilterFunction={props.newFilterFunction}/>
+    <OnsiteFilter theRef={props.refs.FilterOnsite} newFilterFunction={props.newFilterFunction}/>
 </div>
 )
 

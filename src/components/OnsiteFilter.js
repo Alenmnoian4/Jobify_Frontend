@@ -6,7 +6,7 @@ export default function OnsiteFilter(props) {
   
   return (
     <div>
-      <select name="onsite" onChange={onOnsiteFilterValueChanged}>
+      <select name="onsite" ref={props.theRef} onChange={props.newFilterFunction}>
           <option value="All">All</option>
           <option value="On-site">On-site</option>
           <option value="Hybrid">Hybrid</option>
