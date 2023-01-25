@@ -6,7 +6,7 @@ export default function TypeFilter(props) {
   
   return (
     <div>
-      <select name="type" onChange={onTypeFilterValueChanged}>
+      <select name="type" ref={props.theRef} onChange={props.newFilterFunction}>
         <option value="All">All</option>
         <option value="Full-time">Full-time</option>
           <option value="Part-time">Part-time</option>
