@@ -20,8 +20,8 @@ const [showForm, setShowForm] = useState(false);
    <label for="Location">Location:</label>
   <input type="text" name="location" placeholder="Enter Location Here" id=""/><br> </br>
   
-  <label for="On-site">Onsite/Remote:</label><br> </br>
-  <select name="On-site" id="">
+  <label for="On-site">On-site/Remote:</label><br> </br>
+  <select name="onsite" id="">
     <option value="On-site">On-site</option>
       <option value="Remote">Remote</option> 
       <option value="Hybrid">Hybrid</option>
@@ -37,10 +37,10 @@ const [showForm, setShowForm] = useState(false);
       <option value="Temporary">Temporary</option>
       <option value="Volunteer">Volunteer</option>
       <option value="Internship">Internship</option>
-      <option value="pprenticeship">Apprenticeship</option>
+      <option value="Apprenticeship">Apprenticeship</option>
       <option value="Other">Other</option>
     </select>  <br> </br>  <br> </br>
-    <label for="role">Salary:</label><br> </br>
+    <label for="salary">Salary:</label><br> </br>
   <select name="salary" id="">
     <option value="85k">50k-100k</option>
       <option value="120k">100k-150k</option>
