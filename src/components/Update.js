@@ -1,16 +1,19 @@
-import { Form } from "react-router-dom";
-import "../index.css";
+import { useLoaderData, Form } from "react-router-dom";
 
-function Create() {
-  return (
-    <div className="all">
-      <h2>Job Information:</h2>
-      <Form className="createForm" action="/posts/create" method="post">
+
+export default function Update(props){
+    const eachjob = useLoaderData();
+    
+    
+    return (
+        <div>
+            <h2>Update {eachjob.role}</h2>
+      <Form action={`/posts/update/${eachjob._id}`} method="post">
         <label for="role">Role:</label>
         <input
           type="text"
           name="role"
-          placeholder="Job Role"
+          defaultValue={eachjob.role}
           id=""
         />
 
@@ -20,18 +23,19 @@ function Create() {
           id=""
           cols="30"
           rows="10"
+          defaultValue={eachjob.details}
         ></textarea>
     
         <label for="Location">Location:</label>
         <input
           type="text"
           name="location"
-          placeholder="Location"
+          defaultValue={eachjob.location}
           id=""
         />
        
         <label for="On-site">On-site/Remote:</label>
-        <select name="onsite" id="">
+        <select name="onsite" id="" defaultValue={eachjob.onsite}>
           <option value="On-site">On-site</option>
           <option value="Hybrid">Hybrid</option>
           <option value="Remote">Remote</option>
@@ -41,12 +45,12 @@ function Create() {
         <input
           type="text"
           name="appURL"
-          placeholder="Application URL"
+          defaultValue={eachjob.appURL}
           id=""
         />
        
         <label for="type">Type:</label>
-        <select name="type" id="">
+        <select name="type" id="" defaultValue={eachjob.type}>
           <option value="Full-time">Full-time</option>
           <option value="Part-time">Part-time</option>
           <option value="Contract">Contract</option>
@@ -58,7 +62,7 @@ function Create() {
         </select>
       
         <label for="salary">Salary:</label>
-        <select name="salary" id="">
+        <select name="salary" id="" defaultValue={eachjob.salary}>
           <option value="-$50,000">Under $50,000</option>
           <option value="$50,000 - $70,000">$50,000 - $70,000</option>
           <option value="$70,000 - $90,000">$70,000 - $90,000</option>
@@ -70,9 +74,8 @@ function Create() {
           <option value="$200,000+">$200,000+</option>
         </select>
       
-        <input type="Submit" />
+        <input type="Submit" value="Update"/>
       </Form>
-    </div>
-  );
+        </div>
+    )
 }
-export default Create;
