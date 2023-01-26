@@ -8,7 +8,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 3rem;
+
 }
 
 
@@ -22,7 +22,7 @@
 .homeText h2{
     font-size: 74.5px;
     text-align: left;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .homeText p{
@@ -45,6 +45,7 @@ width: 76%;
 
 .additionsSect h3{
     font-size: 45px;
+    margin-bottom: 3rem;
 }
 
 .jobCards{

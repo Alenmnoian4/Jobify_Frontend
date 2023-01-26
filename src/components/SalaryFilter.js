@@ -1,15 +1,15 @@
-import "../index.css";
+import "../styles/Index.css";
 
 export default function SalaryFilter(props) {
   return (
     <div class="selectColumn">
+      <h4>Job Salary:</h4>
       <select
         name="salary"
         id=""
         ref={props.theRef}
         onChange={props.newFilterFunction}
       >
-        <option value="0">Salary</option>
         <option value="All">All</option>
         <option value="-$50,000">Under $50,000</option>
         <option value="$50,000 - $70,000">$50,000 - $70,000</option>

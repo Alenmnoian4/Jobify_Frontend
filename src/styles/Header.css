@@ -1,23 +1,50 @@
-section {
-    border-bottom: 1px solid #1EABFA;
-    height: 5em;
+#root, .App{
+    padding: 0;
 }
 
-.allPosts {
-    position: absolute;
-    top: 1.5em; right: 2em;
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgb(107,222,255);
+    width: 100%;
 }
 
-nav {
-    position: absolute;
-    top: -1.5em; left: 2em;
+.jobifyHeader h1{
+    font-size: 3rem;
+    margin: 0;
+    color: #6bdeff;
+    font-weight: 800;
 }
 
-.jobifyHeader {
-    font-size: 2em;
-    color: #1EABFA;
+.links{
+    display: flex;
+    align-items: center;
 }
 
-a {
+.allPosts button{
+    padding: 10px 20px;
+    background: linear-gradient(180deg, #6bdeff, #52c6e6, #6bdeff);
+    border:1px solid #6bdeff;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    box-shadow: 0 1px 1px .2px rgb(0,0,0,.2);
+}
+
+.allPosts button:hover{
+    cursor: pointer;
+}
+
+.createPost{
+    transition: .3s ease-in-out;
+    height: 100%;
+    font-weight: bold;
+}
+
+.createPost:hover{
+background-color: #b0eeff;
+}
+
+.nav a{
     text-decoration: none;
 }

@@ -2,7 +2,7 @@ import "../index.css";
 import { Link, useLoaderData } from "react-router-dom";
 import FilterRow from "../components/FilterRow";
 import { useState, useRef } from "react";
-import "../styles/Index.css"
+import "../styles/Index.css";
 
 function Index(props) {
   const posts = useLoaderData();
@@ -35,21 +35,28 @@ function Index(props) {
   return (
     <div>
       <h2>All Posts</h2>
-      <div class="selectMenus">
-      <FilterRow
-        refs={{ FilterType, FilterOnsite, FilterSalary }}
-        newFilterFunction={newFilterFunction}
-      />
+      <div className="selectMenus">
+        <h3>Filters: </h3>
+        <FilterRow 
+          refs={{ FilterType, FilterOnsite, FilterSalary }}
+          newFilterFunction={newFilterFunction}
+        />
       </div>
       <div className="index">
         {types.map((post) => (
           <Link to={`/posts/${post._id}`} className="link">
             <div className="postCard">
-              <div className="column">{post.role}</div>
+              <div className="column role">{post.role}</div>
               <div className="column">{post.type}</div>
               <div className="column">{post.location}</div>
-              <div className="column">Learn More
-              <img class="arrow" src="https://i.imgur.com/iYbtvev.png"></img></div>
+              <div className="column columnMore">
+                Learn More
+                <img
+                  className="arrow"
+                  src="https://i.imgur.com/iYbtvev.png"
+                  alt="arrow"
+                ></img>
+              </div>
             </div>
           </Link>
         ))}
