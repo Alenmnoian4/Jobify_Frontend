@@ -1,5 +1,5 @@
 import { Form } from "react-router-dom";
-import "../index.css";
+import "../styles/Create.css";
 
 function Create() {
   return (

@@ -1,4 +1,5 @@
 import { useLoaderData } from "react-router-dom"
+import "../styles/Home.css"
 
 export default function Home (props) {
 const posts = useLoaderData()

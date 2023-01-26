@@ -2,6 +2,7 @@ import { useLoaderData, Form } from "react-router-dom";
 import { ExternalLink } from "react-external-link";
 import Update from "../components/Update";
 import { useState } from "react";
+import "../styles/Show.css"
 
 function Show(props) {
   const eachjob = useLoaderData();
