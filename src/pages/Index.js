@@ -2,6 +2,7 @@ import "../index.css";
 import { Link, useLoaderData } from "react-router-dom";
 import FilterRow from "../components/FilterRow";
 import { useState, useRef } from "react";
+import "../styles/Index.css"
 
 function Index(props) {
   const posts = useLoaderData();
@@ -40,8 +41,8 @@ function Index(props) {
       />
       <div className="index">
         {types.map((post) => (
-          <Link to={`/posts/${post._id}`} className="post">
-            <div className="post">
+          <Link to={`/posts/${post._id}`} className="link">
+            <div className="postCard">
               <h2>{post.role}</h2>
               <h2>{post.type}</h2>
               <h2>{post.location}</h2>
