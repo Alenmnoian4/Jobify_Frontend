@@ -11,14 +11,68 @@
     }
 .submit{
     background-color: rgb(107,222,255);
-    border-radius: 20px;
+    border-radius: 7px;
+    height: 40px;
+    width: 150px;
+    font-size: x-large;
+    border: none;
+   
+
 
 }
 .submit:hover{
     font-weight: bold;
-    background-color: cornflowerblue;
+    background-color:violet;
+    color: rgb(67, 12, 12);
+    
 }
 div{
     padding: 10px;
     text-align:start;
+}
+.alldiv{
+    padding: 8px 16px 8px 16px;
+  }
+  .input{
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    padding-left: 0.5rem;
+    border-radius: 5px;
+  
+  }
+  .input:hover{
+    border-color: aqua;
+  }
+  .textarea:hover{
+    border-color: aqua;
+  }
+  @media screen and (max-width: 600px) and (max-width: 600px){
+    .btn{
+        text-align: center;
+        
+        }
+    body {
+    background-color: rgb(39, 191, 233);
+    float: none;
+    width: 100%;
+    }
+    h2{
+font-weight:500;
+font-size:30px;
+text-align:center;
+}
+.all{
+text-align:center;
+}
+textarea {
+width: 150%;
+
+}
+}
+.salarybd:hover{
+    border-color: aqua;
+}
+.btn{
+text-align: center;
+margin-left: 600px;
 }
