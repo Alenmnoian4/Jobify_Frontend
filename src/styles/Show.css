@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+
+
+body {
+    background-image: url("https://i.imgur.com/OR8UM59.png");
+        background-repeat: no-repeat;
+        background-size: 50%, auto;
+        border-radius: 25px
+        
+    }
+   
+  button{
+    position: relative;
+    display: inline-flex;
+    width: 180px;
+    height: 55px;
+    margin: 0 15px;
+    perspective: 1000px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(107,222,255);
+    color: black;
+    border-radius: round;
+  }
+
