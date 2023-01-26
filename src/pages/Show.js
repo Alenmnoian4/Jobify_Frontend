@@ -11,7 +11,7 @@ function Show(props) {
 
 
   return (
-    <div>
+    <div className="showBody">
         <div className="filters">
 
         </div>
