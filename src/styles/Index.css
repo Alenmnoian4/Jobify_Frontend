@@ -1,0 +1,61 @@
+.arrow {
+    width: 0.8em;
+    padding-left: 10px;
+}
+
+.index {
+    margin: 20px;
+    margin-top: 0px;
+    border-top: 1.5px solid black;
+}
+
+.postCard {
+    border: 1.5px solid black;
+    padding: 20px;
+    margin: 20px;
+}
+
+.column {
+    float: left;
+    width: 25%;
+  }
+
+.postCard:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+a {
+    font-size: 1.2em;
+    color: black;
+}
+
+select {
+    background-color: #F5F5F5;
+    border: none;
+    padding: 5px;
+    font-size: 1em;
+    margin-right: 10px;
+  }
+
+.selectMenus {
+    margin: 20px;
+    margin-bottom: 0px;
+}
+
+.selectColumn {
+    float: left;
+}
+
+.selectMenus:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+h2 {
+    text-align: left;
+    margin: 20px;
+    padding-bottom: 20px;
+}

@@ -1,10 +1,12 @@
+import "../index.css";
+
 export default function TypeFilter(props) {
     
   
   return (
-    <div>
-      <h3>Type</h3>
+    <div class="selectColumn">
       <select name="type" ref={props.theRef} onChange={props.newFilterFunction}>
+      <option value="0">Type</option>
         <option value="All">All</option>
         <option value="Full-time">Full-time</option>
           <option value="Part-time">Part-time</option>

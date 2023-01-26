@@ -1,0 +1,23 @@
+section {
+    border-bottom: 1px solid #1EABFA;
+    height: 5em;
+}
+
+.allPosts {
+    position: absolute;
+    top: 1.5em; right: 2em;
+}
+
+nav {
+    position: absolute;
+    top: -1.5em; left: 2em;
+}
+
+.jobifyHeader {
+    font-size: 2em;
+    color: #1EABFA;
+}
+
+a {
+    text-decoration: none;
+}
