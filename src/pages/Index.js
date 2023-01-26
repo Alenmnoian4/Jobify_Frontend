@@ -34,18 +34,22 @@ function Index(props) {
 
   return (
     <div>
-      <h2>Jobify Posts</h2>
+      <h2>All Posts</h2>
+      <div class="selectMenus">
       <FilterRow
         refs={{ FilterType, FilterOnsite, FilterSalary }}
         newFilterFunction={newFilterFunction}
       />
+      </div>
       <div className="index">
         {types.map((post) => (
           <Link to={`/posts/${post._id}`} className="link">
             <div className="postCard">
-              <h2>{post.role}</h2>
-              <h2>{post.type}</h2>
-              <h2>{post.location}</h2>
+              <div className="column">{post.role}</div>
+              <div className="column">{post.type}</div>
+              <div className="column">{post.location}</div>
+              <div className="column">Learn More
+              <img class="arrow" src="https://i.imgur.com/iYbtvev.png"></img></div>
             </div>
           </Link>
         ))}
