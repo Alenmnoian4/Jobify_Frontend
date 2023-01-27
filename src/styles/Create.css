@@ -1,79 +1,155 @@
 .all{
-    text-indent: 3em;
-    display: flex;
-    flex-direction: column;
     font-family:sans-serif;
+    width: 100%;
     }
-    .form{
-        display: flex;
-    flex-direction: column;
-    width: 60%;
+
+    .all h2{
+      text-align: left;
+      margin: 1% 3%;
+      font-size: 30px;
     }
+
+    .FormGraphics{
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+    }
+
+ .createForm{
+  display: flex;
+  width: 50%;
+}
+
+.textFields{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.dropDowns{
+width: 50%;
+}
+
+.btn{
+  position: absolute;
+  top: 13%;
+  left: 50%
+}
+
+.alldiv{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+width: 50%;
+} 
+
+.graphic{
+  width: 40%;
+}
+
+#blob{
+  width: 100%
+}
+
+.createGraphics img{
+width: 40%
+}
+ 
 .submit{
     background-color: rgb(107,222,255);
-    border-radius: 7px;
-    height: 40px;
-    width: 150px;
-    font-size: x-large;
+    border-radius: 30px;
+    padding: 8px 20px;
+    font-size: 18px;
     border: none;
-   
+} 
 
+ .submit:hover{
+    background-color:rgb(92, 199, 228);
+    cursor: pointer;
+}
 
-}
-.submit:hover{
-    font-weight: bold;
-    background-color:violet;
-    color: rgb(67, 12, 12);
-    
-}
-div{
-    padding: 10px;
-    text-align:start;
-}
-.alldiv{
-    padding: 8px 16px 8px 16px;
+  .alldiv input, .details{
+    transition: .2s ease-in-out;
   }
-  .input{
-    padding-top: 0.7rem;
-    padding-bottom: 0.7rem;
-    padding-left: 0.5rem;
-    border-radius: 5px;
+
+
+  .alldiv input:hover, .details:hover{
+    border-color: rgb(107,222,255)
+  }
   
-  }
-  .input:hover{
-    border-color: aqua;
-  }
-  .textarea:hover{
-    border-color: aqua;
-  }
-  @media screen and (max-width: 600px) and (max-width: 600px){
-    .btn{
-        text-align: center;
-        
-        }
-    body {
-    background-color:antiquewhite;
-    float: none;
-    width: 100%;
-    margin-top: 10px;
-    }
-    h2{
-font-weight:500;
-font-size:30px;
-text-align:center;
-}
-.all{
-text-align:center;
-}
-textarea {
-width: 150%;
 
+
+  @media screen and (min-width: 280px) and (max-width: 767px){
+  
+    .all{
+      /* background-color: rgb(244, 244, 244); */
+      width: 100%;
+      
+    }
+
+.FormGraphics{
+  display: block;
+  width: 95%;
+  margin: 0 auto;
 }
+
+.createForm{
+  margin: 0;
+  width: 100%;
 }
-.salarybd:hover{
-    border-color: aqua;
+
+.alldiv{
+  width: 100%
 }
+
+.textFields{
+  width: 100%;
+}
+
+    .createGraphics, #blob{
+  display: none;
+}
+
+.alldiv h3{
+  width: 100%;
+  text-align: left;
+}
+
+.createForm{
+  flex-direction: column;
+}
+
+.dropDowns{
+  width: 100%;
+  margin-bottom: 5%;
+}
+
 .btn{
-text-align: center;
-margin-left: 600px;
+  position: fixed;
+  top: 88%;
+  left: 60%;
 }
+
+.submit{
+  box-shadow: 0 1px 1px 1px rgb(0,0,0,.3);
+}
+    
+  }
+  /*body {
+      background-color:antiquewhite;
+      float: none;
+      width: 100%;
+      margin-top: 10px;
+      }
+  h2{
+  font-weight:500;
+  font-size:30px;
+  text-align:center;
+  }
+  .all{
+  text-align:center;
+  }
+  textarea {
+  width: 150%;
+  
+  }*/
