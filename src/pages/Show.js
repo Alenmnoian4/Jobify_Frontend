@@ -12,32 +12,38 @@ function Show(props) {
 
   return (
     <div className="showBody">
-        <div className="filters">
 
+
+      <div className="showMain">
+        <div className="jobInformation">
+          <h2>{eachjob.role}</h2>
+          <p><span>Job Type:</span> {eachjob.type}</p>
+          <p><span>Location:</span> {eachjob.location}</p>
+          <p><span>On-site/Remote:</span> {eachjob.onsite}</p>
+          <p><span>Salary:</span> {eachjob.salary}</p>
+          <p><span>Details:</span> {eachjob.details}</p>
+          <div className="showButtons">
+            <ExternalLink href={eachjob.appURL} target="_blank">
+              <button>Application</button>
+            </ExternalLink>
+                    
+                    <button
+            className="EditButton"
+            onClick={() => setShowForm(!showForm)}
+                    >Edit Job Info</button>
+                    <Form action={`/posts/delete/${eachjob._id}`} method="post">
+            <input type="submit" value={`Delete Post`} />
+                    </Form>
+          </div>
         </div>
-
-      <div className="jobInformation">
-        <h2>{eachjob.role}</h2>
-        <p>{eachjob.type}</p>
-        <p>{eachjob.location}</p>
-        <p>{eachjob.onsite}</p>
-        <p>{eachjob.salary}</p>
-        <p>{eachjob.details}</p>
-        <ExternalLink href={eachjob.appURL} target="_blank">
-          <button>Application</button>
-        </ExternalLink>
+        <div className="showImg">
+        <img src="https://i.imgur.com/PlfdbgJ.png" alt="Jobify"></img>
+        </div>
+      </div>
+    <div className="updateCard">
+      {showForm ? (<Update/>) : null}
       </div>
 
-      <button
-        className="EditButton"
-        onClick={() => setShowForm(!showForm)}
-      >Edit Job Info</button>
-
-      <Form action={`/posts/delete/${eachjob._id}`} method="post">
-        <input type="submit" value={`Delete Post`} />
-      </Form>
-
-    {showForm ? (<Update/>) : null}
 
     </div>
   );

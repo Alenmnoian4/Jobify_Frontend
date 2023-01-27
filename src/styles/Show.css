@@ -1,24 +1,56 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
 
+.showMain{
+  display: flex;
+   justify-content: space-evenly;
+}
 
 .showBody {
-    background-image: url("https://i.imgur.com/OR8UM59.png");
-        background-repeat: no-repeat;
-        background-size: 50%, auto;
-        border-radius: 25px
+   display: flex;
+  flex-direction: column;
         
     }
-   
-  /* button{
-    position: relative;
-    display: inline-flex;
-    width: 180px;
-    height: 55px;
-    margin: 0 15px;
-    perspective: 1000px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgb(107,222,255);
-    color: black;
-    border-radius: round;
-  } */
 
+    .updateForm{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .submitBtn{
+      margin: 0 auto
+    }
+
+    .showImg img{
+      width: 630px;
+    }
+
+    .updateCard{
+      background-color: white;
+      position:absolute;
+      width: 517px;
+      right: 225px;
+      border: 2px solid black;
+    }
+
+    .updateComp h2{
+      font-size: 30px;
+    }
+
+    .showButtons{
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+    }
+   
+
+.jobInformation{
+  width: 400px;
+}
+
+.jobInformation h2{
+  margin: 0;
+}
+
+.jobInformation span{
+  font-weight: bold;
+}
