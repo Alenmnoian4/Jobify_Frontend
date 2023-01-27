@@ -9,34 +9,34 @@ function Create() {
   
      <Form className="createForm" action="/posts/create" method="post">
      <div className="form">
-<div className="jobrole">
+<div className="alldiv">
           <label for="role">Role:</label>
           <input
-            type="text"
+            type="text" className="input"
             name="role"
             placeholder="Job Role"
             id=""
           />
 </div>
-<div>
+<div className="alldiv">
           <label for="details">Details:</label>
-          <textarea
+          <textarea className="textarea"
             name="details"
             id=""
             cols="30"
             rows="10"
           ></textarea>
 </div>
-<div>
+<div className="alldiv">
           <label for="Location">Location:</label>
-          <input
+          <input className="input"
             type="text"
             name="location"
             placeholder="Location"
             id=""
           />
 </div>
-<div>
+<div className="alldiv">
           <label for="On-site">On-site/Remote:</label>
           <select name="onsite" id="">
             <option value="On-site">On-site</option>
@@ -44,18 +44,18 @@ function Create() {
             <option value="Remote">Remote</option>
           </select>
 </div>
-<div>
+<div className="alldiv">
           <label for="appURL">Application URL:</label>
-          <input
+          <input className="input"
             type="text"
             name="appURL"
             placeholder="Application URL"
             id=""
           />
 </div>
-<div>
+<div className="alldiv">
           <label for="type">Type:</label>
-          <select name="type" id="">
+          <select name="type" className="typebd"id="">
             <option value="Full-time">Full-time</option>
             <option value="Part-time">Part-time</option>
             <option value="Contract">Contract</option>
@@ -66,9 +66,9 @@ function Create() {
             <option value="Other">Other</option>
           </select>
 </div>
-<div>
+<div className="alldiv">
           <label for="salary">Salary:</label>
-          <select name="salary" id="">
+          <select name="salary" className="salarybd"id="">
             <option value="-$50,000">Under $50,000</option>
             <option value="$50,000 - $70,000">$50,000 - $70,000</option>
             <option value="$70,000 - $90,000">$70,000 - $90,000</option>
@@ -80,7 +80,7 @@ function Create() {
             <option value="$200,000+">$200,000+</option>
           </select>
 </div>
-<div>
+<div className="btn">
           <input className="submit"type="Submit" />
 </div>
           </div>
