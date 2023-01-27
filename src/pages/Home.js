@@ -9,7 +9,7 @@ const posts = useLoaderData()
             <section class="homeBody">
                 <section className="homeText">
                     <h2>A Place For All Your <br/>Job Posts</h2>
-                    <p>We provide a central location for all job posts. Input the job's details and let us hold onto it for you. </p>
+                    <p>Jobify allows job seekers to easily store and manage their job applications. Take control of your career now! </p>
                 </section>
                 <section className="homeGraphic">
                     <img src="https://i.imgur.com/SQkvSRO.png" alt="something" />
