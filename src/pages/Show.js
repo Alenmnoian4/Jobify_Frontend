@@ -27,10 +27,12 @@ function Show(props) {
               <button>Application</button>
             </ExternalLink>
                     
-                    <button
-            className="EditButton"
-            onClick={() => setShowForm(!showForm)}
-                    >Edit Job Info</button>
+                    <div className="editDiv">
+                      <button
+                                  className="EditButton"
+                                  onClick={() => setShowForm(!showForm)}
+                      >Edit Job Info</button>
+                    </div>
                     <Form action={`/posts/delete/${eachjob._id}`} method="post">
             <input type="submit" value={`Delete Post`} />
                     </Form>
