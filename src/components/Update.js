@@ -1,14 +1,14 @@
 import { useLoaderData, Form } from "react-router-dom";
-
+import "../styles/Show.css"
 
 export default function Update(props){
     const eachjob = useLoaderData();
     
     
     return (
-        <div>
+        <div className="updateComp">
             <h2>Update {eachjob.role}</h2>
-      <Form action={`/posts/update/${eachjob._id}`} method="post">
+      <Form className="updateForm" action={`/posts/update/${eachjob._id}`} method="post">
         <label for="role">Role:</label>
         <input
           type="text"
@@ -73,8 +73,10 @@ export default function Update(props){
           <option value="$170,000 - $200,000">$170,000 - $200,000</option>
           <option value="$200,000+">$200,000+</option>
         </select>
-      
-        <input type="Submit" value="Update"/>
+      <div className="submitBtn">
+        
+          <input type="Submit" value="Update"/>
+      </div>
       </Form>
         </div>
     )
