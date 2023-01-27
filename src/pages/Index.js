@@ -33,10 +33,10 @@ function Index(props) {
   }
 
   return (
-    <div>
-      <h2>All Posts</h2>
+    <div className="allPosts">
+      <h2 className="allPostsh2">All Posts</h2>
       <div className="selectMenus">
-        <h3>Filters: </h3>
+        <h3 className="displayNone filterh3">Filters: </h3>
         <FilterRow 
           refs={{ FilterType, FilterOnsite, FilterSalary }}
           newFilterFunction={newFilterFunction}
@@ -47,8 +47,8 @@ function Index(props) {
           <Link to={`/posts/${post._id}`} className="link">
             <div className="postCard">
               <div className="column role">{post.role}</div>
-              <div className="column">{post.type}</div>
-              <div className="column">{post.location}</div>
+              <div className="column displayNone">{post.type}</div>
+              <div className="column displayNone">{post.location}</div>
               <div className="column columnMore">
                 Learn More
                 <img

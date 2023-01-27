@@ -1,4 +1,5 @@
 
+
 .arrow {
   width: 0.8em;
   padding-left: 10px;
@@ -8,6 +9,7 @@
   margin: 20px;
   margin-top: 0px;
   border-top: 1.5px solid black;
+  width: 100%;
 }
 
 .index a{
@@ -74,7 +76,7 @@ select {
     display: flex;
 }
 
-h3, h4{
+.filterh3 h3, .dropdownh4 h4{
     margin:0;
 }
 
@@ -86,7 +88,58 @@ h3, h4{
   clear: both;
 } */
 
-h2 {
+.allPostsh2 h2 {
   margin: 20px;
   font-size: 45px;
 }
+
+
+@media screen and (min-width: 280px) and (max-width: 600px){
+    .displayNone {
+        display: none;
+    }
+    
+    div.index {
+        padding: 0px;
+        margin: auto;
+    }
+    
+    .allPosts {
+     font-size: 0.8em;
+    }
+    
+    .allPosts h2 {
+     font-size: 2em;
+     margin: 5px;
+     text-align: left;
+    }
+    
+    .selectMenus {
+        width: 100%;
+        margin: auto;
+    }
+    
+    .selectColumn {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+    
+    .postCard {
+        padding: 0px;
+    }
+    
+    .column.role {
+        width: 10rem;
+    }
+
+    .dropdownh4 {
+        margin: 2px;
+        font-size: 0.8em;
+    }
+
+    .allpostsselect {
+        width: 6em;
+    }
+
+    }

@@ -2,9 +2,10 @@ import "../styles/Index.css";
 
 export default function SalaryFilter(props) {
   return (
-    <div class="selectColumn">
-      <h4>Job Salary:</h4>
+    <div className="selectColumn">
+      <h4 className="dropdownh4">Job Salary:</h4>
       <select
+        className="allpostsselect"
         name="salary"
         id=""
         ref={props.theRef}
