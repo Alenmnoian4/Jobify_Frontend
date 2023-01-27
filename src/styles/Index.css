@@ -6,10 +6,10 @@
 }
 
 .index {
-  margin: 20px;
   margin-top: 0px;
   border-top: 1.5px solid black;
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .index a{
@@ -20,8 +20,9 @@
   display: flex;
   justify-content: space-between;
   border: 1.5px solid black;
-  margin: 20px;
-  border-radius: 10px;
+  margin: 10px 0;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 .postCard:hover{
@@ -36,12 +37,6 @@
   width: 10rem;
   text-align: right;
 }
-
-/* .postCard:after {
-  content: "";
-  display: table;
-  clear: both;
-} */
 
 a {
   font-size: 1.2em;
@@ -76,17 +71,14 @@ select {
     display: flex;
 }
 
-.filterh3 h3, .dropdownh4 h4{
+.filterh3{
+margin-right: 1%
+}
+
+.dropdownh4 h4{
     margin:0;
 }
 
-
-
-/* .selectMenus:after {
-  content: "";
-  display: table;
-  clear: both;
-} */
 
 .allPostsh2 h2 {
   margin: 20px;
@@ -94,7 +86,7 @@ select {
 }
 
 
-@media screen and (min-width: 280px) and (max-width: 600px){
+@media screen and (min-width: 280px) and (max-width: 767px){
     .displayNone {
         display: none;
     }
@@ -115,6 +107,7 @@ select {
     }
     
     .selectMenus {
+      justify-content: center;
         width: 100%;
         margin: auto;
     }
@@ -126,11 +119,12 @@ select {
     }
     
     .postCard {
-        padding: 0px;
+        padding: 5px;
     }
     
     .column.role {
         width: 10rem;
+        font-size: 80%;
     }
 
     .dropdownh4 {
@@ -142,4 +136,8 @@ select {
         width: 6em;
     }
 
+
+    .column.columnMore{
+      font-size: 90%;
+    }
     }
