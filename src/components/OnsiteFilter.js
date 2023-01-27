@@ -5,9 +5,9 @@ export default function OnsiteFilter(props) {
   
   return (
 
-    <div class="selectColumn">
-      <h4>On-site/Remote:</h4>
-      <select name="onsite" ref={props.theRef} onChange={props.newFilterFunction}>
+    <div className="selectColumn">
+      <h4 className="dropdownh4">On-site/Remote:</h4>
+      <select className="allpostsselect" name="onsite" ref={props.theRef} onChange={props.newFilterFunction}>
           <option value="All">All</option>
           <option value="On-site">On-site</option>
           <option value="Hybrid">Hybrid</option>

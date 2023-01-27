@@ -4,9 +4,10 @@ export default function TypeFilter(props) {
     
   
   return (
-    <div class="selectColumn">
-      <h4>Job Type:</h4>
-      <select name="type" ref={props.theRef} onChange={props.newFilterFunction}>
+    <div className="selectColumn">
+      <h4 className="dropdownh4">Job Type:</h4>
+      <select 
+      className="allpostsselect" name="type" ref={props.theRef} onChange={props.newFilterFunction}>
         <option value="All">All</option>
         <option value="Full-time">Full-time</option>
           <option value="Part-time">Part-time</option>
