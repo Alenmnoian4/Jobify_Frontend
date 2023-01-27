@@ -6,16 +6,17 @@
 
 .homeBody{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
+    margin-top: 3em;
 
 }
 
 
 
 .homeText{
-    max-width: 30rem;
-    margin-left: 14rem;
+    width: 30rem;
+    margin-right: 11em;
 
 }
 
@@ -32,7 +33,7 @@
 }
 
 .homeGraphic img{
-    width: 75rem;
+    width: 50rem;
     
 }
 
@@ -74,4 +75,136 @@ width: 76%;
 
 .jobCard p{
     font-size: 20px;
+}
+
+@media screen and (min-width: 280px) and (max-width: 767px){
+  .homePage{
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .homeBody{
+    width: 100%;
+  }
+
+.homeGraphic img{
+    display: none;
+}
+
+.homeText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin-right: 0;
+    
+    
+}
+
+.homeText h2{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.homeText p{
+    font-size: 25px;
+}
+
+.additionsSect{
+    width: 99%;
+    align-items: center;
+}
+
+.additionsSect h3{
+    font-size: 25px;
+    margin: 25px 0;
+}
+
+.jobCards{
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.jobCard h4, .jobCard p{
+    margin: 0;
+}
+
+.jobCard{
+    width: 12rem;
+    height: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 1rem 0;
+}
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1920px){
+    .homePage{
+        min-width: 280px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .homeBody{
+        width: 100%;
+      }
+
+      .homeGraphic{
+        width: 60%;
+      }
+    
+    .homeGraphic img{
+       width: 100%;
+    }
+    
+    .homeText{
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        margin-right: 0;
+    }
+    
+    .homeText h2{
+        font-size: 60px;
+        font-weight: bold;
+        text-align: left;
+    }
+    
+    .homeText p{
+        font-size: 30px;
+    }
+    
+    .additionsSect{
+        width: 90%;
+    }
+    
+    .additionsSect h3{
+        font-size: 45px;
+        margin: 25px 0;
+    }
+    
+    .jobCards{
+        width: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .jobCard h4, .jobCard p{
+        margin: 0;
+    }
+    
+    .jobCard{
+        width: 12rem;
+        height: 12rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 1rem 0;
+    } 
 }
