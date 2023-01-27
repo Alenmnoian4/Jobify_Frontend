@@ -24,7 +24,7 @@ function Show(props) {
           <p><span>Details:</span> {eachjob.details}</p>
           <div className="showButtons">
             <ExternalLink href={eachjob.appURL} target="_blank">
-              <button>Application</button>
+              <button className="appBtn">Application</button>
             </ExternalLink>
                     
                     <div className="editDiv">
@@ -34,7 +34,7 @@ function Show(props) {
                       >Edit Job Info</button>
                     </div>
                     <Form action={`/posts/delete/${eachjob._id}`} method="post">
-            <input type="submit" value={`Delete Post`} />
+            <input className="deleteBtn" type="submit" value={`Delete Post`} />
                     </Form>
           </div>
         </div>

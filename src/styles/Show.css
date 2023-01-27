@@ -28,8 +28,27 @@
       background-color: white;
       position:absolute;
       width: 517px;
-      right: 225px;
-      border: 2px solid black;
+      right: 150px;
+      border: 1px solid black;
+      padding: 3px
+    }
+
+    .updateCard h2{
+      font-size: 30px;
+      margin-bottom: 0;
+    }
+
+    .updateCard input[type="submit"]{
+      background-color: rgb(107,222,255);
+      border-radius: 30px;
+      padding: 8px 20px;
+      font-size: 14px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .updateCard label{
+      margin-top: 5px;
     }
 
     .updateComp h2{
@@ -40,6 +59,15 @@
       display: flex;
       justify-content: space-between;
       padding: 0;
+    }
+
+    .appBtn, .editDiv button, .deleteBtn{
+      background-color: rgb(107,222,255);
+    border-radius: 30px;
+    padding: 8px 20px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
     }
    
 
@@ -56,8 +84,10 @@
 }
 
 
-@media screen and (min-width: 280px) {
-
+@media screen and (min-width: 280px) and (max-width: 767px){
+.showBody{
+  width: 100%;
+}
   .showImg img{
     display: none;
   }
@@ -66,7 +96,9 @@
     position: relative;
     border: none;
     background-color: transparent;
-    width: 270px;
+    width: 90%;
+    right: 0px;
+    margin: 0 auto;
   }
 
   .showButtons{
@@ -80,5 +112,7 @@
     padding: 0;
   }
 
-
+.jobInformation h2{
+  margin-top: 10px;
+}
 }
