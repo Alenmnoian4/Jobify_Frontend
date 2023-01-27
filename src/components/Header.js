@@ -4,7 +4,7 @@ import "../styles/Header.css";
 function Header(props) {
   return (
     <section>
-      <nav className="nav" align="left">
+      <nav className="nav">
         <div className="siteName">
           <Link to="/" className="jobifyHeader">
             <h1>Jobify</h1>
@@ -13,11 +13,11 @@ function Header(props) {
 
         <div className="links">
           <div className="createPost">
-            <Link to="/posts/new">Create Post</Link>
+            <Link className="linkBtn" to="/posts/new">Create Post</Link>
           </div>
           <div className="allPosts">
-            <Link to="/posts">
-           <button>All Posts</button>
+            <Link className="APLink" to="/posts">
+           <button className="APBtn">All Posts</button>
             </Link>
           </div>
         </div>
