@@ -12,7 +12,7 @@
 
 .jobifyHeader h1 {
     font-size: 3rem;
-    margin: 0;
+    margin: 0 10%;
     color: #6bdeff;
     font-weight: 800;
 }
@@ -20,9 +20,11 @@
 .links{
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
+    width: 23%;
 }
 
-.allPosts button{
+.APBtn{
     padding: 10px 20px;
     background: linear-gradient(180deg, #6bdeff, #52c6e6, #6bdeff);
     border:1px solid #6bdeff;
@@ -31,7 +33,7 @@
     box-shadow: 0 1px 1px .2px rgb(0,0,0,.2);
 }
 
-.allPosts button:hover{
+.APBtn:hover{
     cursor: pointer;
 }
 
@@ -50,19 +52,37 @@ background-color: #b0eeff;
 }
 
 
-@media screen and (min-width: 280px) and (max-width: 600px){
+@media screen and (min-width: 280px) and (max-width: 767px){
 
+    .nav{
+        width: 100%;
+    }
+    
     div.links {
-        font-size: 0.8rem;
+        width: 60%;
         padding: 0px;
     }
 
+    .siteName{
+        width: 40%;
+        height: 100%;
+       
+    }
+
     .jobifyHeader h1 {
-        font-size: 2rem;
+        text-align: left;
+        font-size: 25px;
     }
 
-    .allPosts button {
-        font-size: 1rem;
+
+    .linkBtn{
+        font-size: 1%;
     }
 
+    .APBtn{
+    font-size: 10px;
+    width:70px;
+    height: 20px;
+    padding: 0;
+    }
 }
