@@ -54,3 +54,31 @@
 .jobInformation span{
   font-weight: bold;
 }
+
+
+@media screen and (min-width: 280px) {
+
+  .showImg img{
+    display: none;
+  }
+
+  .updateCard{
+    position: relative;
+    border: none;
+    background-color: transparent;
+    width: 270px;
+  }
+
+  .showButtons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 150px;
+  }
+
+  .editDiv{
+    padding: 0;
+  }
+
+
+}
