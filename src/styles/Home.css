@@ -77,6 +77,10 @@ width: 76%;
     font-size: 20px;
 }
 
+.jobCards a{
+    text-decoration: none;
+}
+
 @media screen and (min-width: 280px) and (max-width: 767px){
   .homePage{
     min-width: 280px;
@@ -126,10 +130,13 @@ width: 76%;
     flex-direction: column;
     width: 100%;
     align-items: center;
+   
 }
+
 
 .jobCard h4, .jobCard p{
     margin: 0;
+    
 }
 
 .jobCard{

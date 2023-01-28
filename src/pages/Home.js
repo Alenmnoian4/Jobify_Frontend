@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom"
+import { useLoaderData, Link } from "react-router-dom"
 import "../styles/Home.css"
 
 export default function Home (props) {
@@ -19,11 +19,13 @@ const posts = useLoaderData()
                 <h3>Recent Additions</h3>
                 <section className="jobCards">
                     {posts.slice(-4).map((post) => (
+                         <Link to={`/posts/${post._id}`}>
                          <div className="jobCard">
                         <h4>{post.role}</h4>
                         <p>{post.type}</p>
                         <p>{post.location}</p>
                     </div>
+                    </Link>
                     ))}
                    
                 </section>
